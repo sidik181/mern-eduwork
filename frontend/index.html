@@ -5,62 +5,101 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Biodata Sidik Komarudiansah</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://kit.fontawesome.com/1fb057491e.js" crossorigin="anonymous"></script>
+	<title>Portfolio Sidik Komarudiansah</title>
 </head>
 
 <body>
-	<h1>My Portfolio</h1>
-	<hr>
-	<h2>About Me</h2>
-	<p>Halo, perkenalkan nama saya Sidik Komarudiansah. Saat ini saya bekerja di salah satu startup di Jakarta sebagai
-		Product Owner. Saya bertanggung jawab atas pengembangan sebuah produk software aplikasi. Dan berkoordinasi dengan
-		Produk Management serta klien untuk mengantisipasi kebutuhan di lapangan.</p>
+	<section class="home">
+		<div class="max-width">
+			<img src="./img/sidik-komarudiansah.jpg" class="foto-profil" alt="Sidik Komarudiansah">
+			<h1>Sidik Komarudiansah</h1>
+			<p>Product Owner | Software Development Enthusiast</p>
+		</div>
+	</section>
 
-	<h2>Hobbies</h2>
-	<ul>
-		<li>Photography</li>
-		<li>Watching Movie</li>
-		<li>Bicycle</li>
-		<li>Traveling</li>
-	</ul>
-	<h2>Skills</h2>
-	<ul>
-		<li>HTML</li>
-		<li>CSS</li>
-		<li>Javascript</li>
-	</ul>
-	<h2>Education</h2>
-	<table border="1px" cellspacing="0" cellpadding="5">
-		<thead align="center">
-			<tr>
-				<th>Nama Sekolah</th>
-				<th>Jurusan</th>
-				<th>Kota</th>
-				<th>Tahun Lulus</th>
-			</tr>
-			<tr>
-				<td>SMK Amaliyah</td>
-				<td>Akuntansi</td>
-				<td>Jakarta Selatan</td>
-				<td>2012</td>
-			</tr>
-			<tr>
-				<td>STEBANK Islam Mr. Sjafruddin Prawiranegara</td>
-				<td>Perbankan Syariah</td>
-				<td>Jakarta Pusat</td>
-				<td>2017</td>
-			</tr>
-		</thead>
-	</table>
+	<section class="about">
+		<div class="max-width">
+			<h1 class="about-title">Tentang Saya</h1>
+			<p class="about-contents">Halo, perkenalkan nama saya Sidik Komarudiansah. Saat ini saya bekerja di salah satu
+				startup di Jakarta sebagai
+				Product Owner. Saya bertanggung jawab atas pengembangan sebuah produk software aplikasi. Dan berkoordinasi
+				dengan
+				Produk Management serta klien untuk mengantisipasi kebutuhan di lapangan.</p>
+		</div>
+	</section>
 
-	<h2>Contact Me</h2>
-	<form action="">
-		<label for="name">Nama Anda:</label><br>
-		<input type="text" name="name" id="name"><br>
-		<label for="pesan">Pesan:</label><br>
-		<textarea name="pesan" id="pesan" cols="30" rows="5"></textarea><br>
-		<button type="submit">Kirim</button>
-	</form>
+	<section class="hobbies">
+		<div class="max-width">
+			<h1 class="hobbies-title">Hobi</h1>
+			<div class="list-hobi">
+				<div class="kartu-hobi">
+					<img src="./img/Watching-Movie.png" alt="Menonton Film">
+					<p>Menonton Film</p>
+				</div>
+				<div class="kartu-hobi">
+					<img src="./img/Bicycle.png" alt="Menonton Film">
+					<p>Bermain Sepeda</p>
+				</div>
+				<div class="kartu-hobi">
+					<img src="./img/Traveling.png" alt="Menonton Film">
+					<p>Travel</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="contact">
+		<div class="max-width">
+				<h1 class="contact-title">Hubungi Saya</h1>
+				<p class="sub-title">Mari Ciptakan Karya Bersama</p>
+			<div class="container">
+				<div class="contact-info">
+					<div class="box">
+						<div class="icon"><i class="fa-solid fa-map-location-dot"></i></div>
+						<div class="text">
+							<h3>Alamat</h3>
+							<p>Depok, Indonesia<br>16451</p>
+						</div>
+					</div>
+					<div class="box">
+						<div class="icon"><i class="fa-solid fa-phone"></i></div>
+						<div class="text">
+							<h3>Telepon</h3>
+							<p>021 - </p>
+						</div>
+					</div>
+					<div class="box">
+						<div class="icon"><i class="fa-solid fa-envelope"></i></div>
+						<div class="text">
+							<h3>Email</h3>
+							<p>sidik.komarudiansah@yahoo.com</p>
+						</div>
+					</div>
+				</div>
+				<div class="contact-form">
+					<form action="">
+						<div class="input-box">
+							<input type="text" name="name" id="name" required="required">
+							<span>Nama Anda</span>
+						</div>
+						<div class="input-box">
+							<input type="text" name="name" id="name" required="required">
+							<span>Email</span>
+						</div>
+						<div class="input-box">
+							<textarea name="pesan" id="pesan" cols="30" rows="5" required="required"></textarea>
+							<span>Pesan Anda</span>
+						</div>
+						<div class="input-box">
+							<input type="submit" name="" value="Kirim">
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
 </body>
 
 </html>

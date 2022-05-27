@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+h3 {
+	font-family: Poppins, sans-serif;
+	font-size: 16px;
+}
+
+p {
+	font-family: Ubuntu, sans-serif;
+}
+
+section {
+	padding-top: 65px;
+}
+
+.max-width {
+	max-width: 1350px;
+	padding: 0 80px;
+	margin: auto;
+}
+
+.about-title,
+.hobbies-title,
+.contact-title {
+	font-weight: 600;
+	font-size: 25px;
+	text-align: center;
+	margin-bottom: 10px;
+	font-family: Poppins, sans-serif;
+	text-transform: uppercase;
+}
+
+.home {
+	height: 450px;
+	background-image: url(./img/bg.jpg);
+	background-size: cover;
+	text-align: center;
+}
+
+.home .foto-profil {
+	width: 180px;
+	border-radius: 50%;
+}
+
+.home p {
+	font-size: 20px;
+	font-weight: 400;
+}
+
+.about {
+	text-align: center;
+}
+
+.about p {
+	font-size: 17px;
+}
+
+.list-hobi {
+	width: 100%;
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.kartu-hobi {
+	width: 20%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.kartu-hobi img {
+	width: 50%;
+	border-radius: 50%;
+}
+
+.kartu-hobi p {
+	font-size: 17px;
+	font-weight: 500;
+	margin-top: 10px;
+}
+
+.contact {
+	margin-top: 40px;
+	position: relative;
+	padding: 20px 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.sub-title {
+	font-weight: 500;
+	font-size: 17px;
+	text-align: center;
+	margin-top: -10px;
+}
+
+.container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 5px;
+}
+
+.container .contact-info {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+}
+
+.container .contact-info .box {
+	position: relative;
+	padding: 10px 0;
+	display: flex;
+}
+
+.container .contact-info .box .icon {
+	min-width: 40px;
+	height: 40px;
+	display: flex;
+	background: #f0f0f0;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+}
+
+.container .contact-info .box .text {
+	display: flex;
+	margin-left: 15px;
+	font-size: 16px;
+	flex-direction: column;
+	font-weight: 300;
+}
+
+.contact-form {
+	width: 40%;
+	padding: 20px 40px;
+}
+
+.contact-form .input-box {
+	position: relative;
+	width: 100%;
+	margin-top: 10px;
+}
+
+.contact-form .input-box input,
+.contact-form .input-box textarea {
+	width: 100%;
+	padding: 3px 0;
+	font-size: 16px;
+	margin: 5px 0;
+	border: none;
+	border-bottom: 2px solid #333;
+	outline: none;
+	resize: none;
+}
+
+.contact-form .input-box span {
+	position: absolute;
+	left: 0;
+	padding: 5px auto;
+	font-size: 16px;
+	margin: 10px 0;
+	pointer-events: none;
+	transition: 0.5s;
+	color: #666;
+}
+
+.contact-form .input-box input:focus~span,
+.contact-form .input-box input:valid~span,
+.contact-form .input-box textarea:focus~span,
+.contact-form .input-box textarea:valid~span {
+	color: #e91e63;
+	font-size: 12px;
+	transform: translateY(-20px);
+}
+
+.contact-form .input-box input[type="submit"] {
+	width: 100px;
+	background: #00bcd4;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	padding: 7px;
+}
