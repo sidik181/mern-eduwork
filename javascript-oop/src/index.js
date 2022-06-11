@@ -1,4 +1,4 @@
-const Table = require("../Module/Table");
+import { Table } from '../Module/Table.js';
 
 const table = new Table({
 	columns: ["#", "First Name", "Last Name", "Email"],
@@ -7,5 +7,6 @@ const table = new Table({
 		["2", "Ade", "Abang", "adeabang@gmail.com"]
 	]
 });
+
 const app = document.getElementById('app');
 table.render(app);

@@ -40,4 +40,4 @@ class Table {
 	}
 }
 
-module.exports = Table;
+export {Table};
